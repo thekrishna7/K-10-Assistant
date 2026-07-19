@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>A Minimal, Modern, Futuristic, and Premium Cognitive AI Desktop Assistant</b><br>
-  <sub>Designed & Developed by <a href="https://github.com/thekrishna-builds">@thekrishna.builds</a></sub>
+  <sub>Designed & Developed by <a href="https://github.com/thekrishna7">@thekrishna.builds</a></sub>
 </p>
 
 <p align="center">
@@ -114,7 +114,7 @@ K-10 Assistent/
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/thekrishna-builds/K-10-Assistant.git
+    git clone https://github.com/thekrishna7/K-10-Assistant
     cd K-10-Assistant
     ```
 
@@ -178,7 +178,7 @@ A: Any important facts you tell the assistant are parsed and saved to `memory/lo
 ## 💻 Developer
 
 *   **Lead Architect**: Krishna Sharma
-*   **Brand Identity**: [@thekrishna.builds](https://github.com/thekrishna-builds)
+*   **Brand Identity**: [@thekrishna.builds](https://github.com/thekrishna7)
 
 ---
 
