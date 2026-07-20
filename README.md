@@ -105,31 +105,61 @@ K-10 Assistent/
 
 ## 🛠️ Installation & Setup
 
-### Requirements
-*   **Operating System**: Windows 10/11 (Native support for screen metrics and window arrangements)
-*   **Python**: v3.10 - v3.12 (For compiling source)
-*   **PyAudio Dependencies**: Microphone hardware for voice controls
+### 📋 Prerequisites & System Requirements
+*   **Operating System**: Windows 10 / 11 (Required for native window snapping, system audio, & hardware metrics)
+*   **Python**: Version 3.10 to 3.12 (Make sure Python is added to your system `PATH`)
+*   **Hardware**: Working Microphone & Speaker/Headphones (for PyAudio voice commands and TTS output)
+*   **API Key**: Free Google AI Studio API Key ([Get Gemini API Key](https://aistudio.google.com/))
 
-### Installation Steps
+---
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/thekrishna7/K-10-Assistant
-    cd K-10-Assistant
-    ```
+### 🚀 Step-by-Step Installation Commands
 
-2.  Run the automated setup script to install dependencies:
-    ```bash
-    python setup.py
-    ```
+#### Step 1: Clone the Repository & Navigate to Directory
+```bash
+git clone https://github.com/thekrishna7/K-10-Assistant
+cd K-10-Assistant
+```
 
-3.  Configure your credentials:
-    On first launch, K-10 Assistant will prompt you to enter your **Google AI Studio API Key**. Paste your key in the secure dialog to synchronize.
+#### Step 2: Create & Activate Virtual Environment (Recommended)
+```bash
+# Create virtual environment
+python -m venv venv
 
-4.  Start the application:
-    ```bash
-    python main.py
-    ```
+# Activate virtual environment (Windows PowerShell)
+.\venv\Scripts\Activate.ps1
+
+# OR Activate virtual environment (Windows Command Prompt - CMD)
+venv\Scripts\activate.bat
+```
+
+#### Step 3: Install Required Dependencies
+
+**Option A: Automated Setup (Recommended)**
+Runs pip install for `requirements.txt` and sets up Playwright browsers automatically:
+```bash
+python setup.py
+```
+
+**Option B: Manual Installation**
+If you prefer running commands individually:
+```bash
+# Upgrade pip to latest version
+python -m pip install --upgrade pip
+
+# Install all Python requirements
+pip install -r requirements.txt
+
+# Install Playwright browser engines (used for browser control action)
+playwright install
+```
+
+#### Step 4: Launch Main Application
+```bash
+python main.py
+```
+
+*Note: On your first launch, a secure dialog will pop up asking for your **Google Gemini API Key**. Enter your API key to save it in `config/config.json` and initialize the assistant.*
 
 ---
 
